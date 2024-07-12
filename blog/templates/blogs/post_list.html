@@ -1,22 +1,83 @@
-<html>
-    <head>
-        <title>Blog Django Girls</title>
-    </head>
-    <body>
-        <div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Django Girls</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+        .post p {
+            color: #666;
+        }
+        .post a {
+            text-decoration: none;
+            color: #333;
+        }
+        .post a:hover {
+            text-decoration: underline;
+        }
+        .post-meta {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .post-meta time {
+            margin-right: 10px;
+        }
+        .site-title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .site-title a {
+            text-decoration: none;
+            color: #333;
+        }
+        .site-title a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="site-title">
             <h1><a href="/">Blog Django Girls</a></h1>
         </div>
 
-        <div>
-            <p>publicado: 14.06.2014, 12:14</p>
+        <div class="post">
+            <div class="post-meta">
+                <time datetime="2014-06-14T12:14">Publicado em 14 de junho de 2014, 12:14</time>
+            </div>
             <h2><a href="">Meu primeiro post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
 
-        <div>
-            <p>publicado: 14.06.2014, 12:14</p>
+        <div class="post">
+            <div class="post-meta">
+                <time datetime="2014-06-14T12:14">Publicado em 14 de junho de 2014, 12:14</time>
+            </div>
             <h2><a href="">Meu segundo post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
-    </body>
+    </div>
+</body>
 </html>
