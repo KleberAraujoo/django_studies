@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def porta(request):
-    return HttpResponse("Você está na porta")
+    return render(request, 'blogs/porta.html', {})
 
 def sala(request):
     return HttpResponse("Você está na sala")
@@ -12,4 +12,4 @@ def quarto(request):
     return HttpResponse("Você está no quarto")
 
 def post_list(request):
-    return render(request, '/blog/templates/blogs/post_list.html', {})
+    return render(request, 'blogs/post_list.html', {})
