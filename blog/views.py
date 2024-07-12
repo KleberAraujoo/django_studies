@@ -12,4 +12,4 @@ def quarto(request):
     return HttpResponse("Você está no quarto")
 
 def post_list(request):
-    return render(request, 'blog/post_list.html', {})
+    return render(request, '/blog/templates/blogs/post_list.html', {})
